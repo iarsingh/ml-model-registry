@@ -1,5 +1,12 @@
 # ML Model Registry
 
+## Overview
+
+A small model registry that records model versions and promotes one of them to a champion alias. Versions are registered through `POST /models`, promoted through `POST /promote`, and the current champion is read from `GET /champion`. A versioned `/v1` ops API adds workspaces, tenant isolation, job approval and audit records.
+
+- **Built with:** Python, pytest, GitHub Actions
+- **Scope:** Local ML engineering exercise with tests; promotion does not trigger a cluster rollout.
+
 <!-- project-guide:start -->
 ## Project guide
 
